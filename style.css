@@ -1,0 +1,115 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.main-div{
+    width: 20rem;
+    height: 33rem;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 2.5rem;
+}
+.main-div img{
+    border-radius: 50%;
+    width: 5rem;
+}
+.main-div h1{
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.main-div h4{
+    color: hsl(75, 94%, 57%);
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-top: 0;
+}
+.main-div p{
+    color: rgb(226, 224, 224);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.button-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.button-div a{
+    padding: 0.8rem;
+    margin: 10px;
+    border-radius: 0.8rem;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.button-div a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+}
+footer{
+    margin: 10px;
+    color: white;
+   
+}
+@media (max-width: 445px) {
+
+   
+    .main-div {
+        
+      width: 80%; /* Adjust width to fit the mobile screen */
+      height: auto; /* Adjust height based on content */
+      padding: 1.5rem; /* Less padding for smaller screens */
+    }
+    
+    .main-div img {
+      width: 4rem; /* Smaller image size for mobile */
+    }
+    
+    .main-div h1 {
+      font-size: 1.25rem; /* Smaller font size for heading */
+    }
+    
+    .main-div h4, .main-div p {
+      font-size: 0.75rem; /* Smaller font size for text */
+    }
+    
+    .button-div {
+      width: 100%; /* Full width for button container */
+    }
+    
+    .button-div a {
+      padding: 0.6rem; /* Less padding for smaller screens */
+      font-size: 0.75rem; /* Smaller font size for buttons */
+    }
+    footer{
+      
+      text-align: center;
+      
+    }
+  }
+
+@media (max-width: 310px){
+  body{
+    min-width: 310px;
+    min-height: 100vh;
+  }
+}
